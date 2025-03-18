@@ -84,7 +84,7 @@ Esse método adiciona um botão na página que, ao ser clicado, executa automati
 
 Clique no link abaixo para instalar o DeepPoop Userscript – ao acessar, o gerenciador de userscripts (como o Tampermonkey) será aberto automaticamente para facilitar a instalação:
 
-✨ [Instalar Userscript](https://github.com/henryykkkk/DeepPoop/raw/main/atalho.js)
+✨ [Instalar Userscript](tampermonkey://install-script/https://github.com/henryykkkk/DeepPoop/raw/main/atalho.user.js)
 
 Caso você ainda não tenha um gerenciador de userscripts instalado, recomendamos:
 
