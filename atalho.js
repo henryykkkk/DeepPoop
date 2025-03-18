@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Atalho para Executar o DeepPoop
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      1.0
 // @description  Execute o DeepPoop pelo próprio site do DeepSeek!
 // @author       henryykkkk
 // @match        https://chat.deepseek.com
