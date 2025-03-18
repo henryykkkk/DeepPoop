@@ -5,7 +5,7 @@
 <div align="center">
   <p>
     <a href="LICENSE"><img src="https://img.shields.io/badge/Licença-MIT-yellow.svg" alt="Licença: MIT"></a>  
-    <a href="https://github.com/seu_usuario/DeepPoop"><img src="https://img.shields.io/badge/Versão-1.3-brightgreen" alt="Versão"></a>
+    <a href="https://github.com/seu_usuario/DeepPoop"><img src="https://img.shields.io/badge/Versão-1.4-brightgreen" alt="Versão"></a>
     <a href="https://github.com/seu_usuario/DeepPoop"><img src="https://img.shields.io/badge/Status-Ativo-brightgreen" alt="Status"></a>
   </p>
 </div>
