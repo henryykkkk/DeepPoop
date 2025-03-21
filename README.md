@@ -88,11 +88,11 @@ Clique no link abaixo para instalar o DeepPoop Userscript – ao acessar, o gere
 
 Caso você ainda não tenha um gerenciador de userscripts instalado, recomendamos:
 
-- **Chrome:** [Instalar Tampermonkey no Chrome](#)
-- **Edge:** [Instalar Tampermonkey no Edge](#)
-- **Firefox:** [Instalar Tampermonkey no Firefox](#)
+- **Chrome:** [Instalar Tampermonkey no Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+- **Edge:** [Instalar Tampermonkey no Edge](https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendndfphd)
+- **Firefox:** [Instalar Tampermonkey no Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
   
-*(KiwiBrowser também é compatível, ele aceita de todas as lojas de extensões)*
+*(KiwiBrowser também é compatível, ele aceita de todas as lojas de extensões, mas eu recomendo o [Violentmonkey](https://violentmonkey.github.io/get-it/) caso ele não funcione)*
 
 Após instalar o Tampermonkey, clique novamente no link para instalar o DeepPoop Userscript e aproveite!
 
