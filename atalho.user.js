@@ -35,7 +35,7 @@ async function carregarSVG() {
 
 async function criarBotaoDeepPoop() {
     const botaoExistente = document.querySelector('.ds-button.d9f56c96 .ad0c98fd');
-    if (botaoExistente && botaoExistente.textContent === 'DeepPoop V1.3') {
+    if (botaoExistente && botaoExistente.textContent === 'DeepPoop') {
         return;
     }
 
