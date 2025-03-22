@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Atalho para Executar o DeepPoop
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Execute o DeepPoop pelo próprio site do DeepSeek!
 // @author       henryykkkk
 // @match        https://chat.deepseek.com
@@ -34,16 +34,16 @@ async function carregarSVG() {
 }
 
 async function criarBotaoDeepPoop() {
-    const botaoExistente = document.querySelector('.ds-button.d9f56c96 .ad0c98fd');
+    const botaoExistente = document.querySelector('.ds-button._3172d9f .ad0c98fd');
     if (botaoExistente && botaoExistente.textContent === 'DeepPoop') {
         return;
     }
 
     const novoBotao = document.createElement('div');
     novoBotao.setAttribute('role', 'button');
-    novoBotao.setAttribute('class', 'ds-button ds-button--primary ds-button--filled ds-button--rect ds-button--m d9f56c96');
+    novoBotao.setAttribute('class', 'ds-button ds-button--primary ds-button--filled ds-button--rect ds-button--m _3172d9f');
     novoBotao.setAttribute('tabindex', '0');
-    novoBotao.setAttribute('style', '--ds-button-color: transparent; --button-text-color: #F8FAFF; --button-border-color: #626262; --ds-button-hover-color: #424451; position: relative;');
+    novoBotao.setAttribute('style', '--ds-button-color: transparent; --button-text-color: #F8FAFF; --button-border-color: #626262; --ds-button-hover-color: #424451;');
 
     const divIcon = document.createElement('div');
     divIcon.setAttribute('class', 'ds-button__icon');
@@ -51,10 +51,16 @@ async function criarBotaoDeepPoop() {
     const spanIcon = document.createElement('span');
     spanIcon.setAttribute('style', 'transition: none; transform: rotate(0deg);');
 
+    const divIconSvg = document.createElement('div');
+    divIconSvg.setAttribute('class', 'ds-icon');
+    divIconSvg.setAttribute('style', 'font-size: 19px; width: 19px; height: 19px; color: rgb(248, 250, 255);');
+
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.setAttribute('width', '20');
     svg.setAttribute('height', '20');
     svg.setAttribute('viewBox', '0 0 20 20');
+    svg.setAttribute('fill', 'none');
+    svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
 
     const image = document.createElementNS('http://www.w3.org/2000/svg', 'image');
     image.setAttribute('href', 'https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/deepseek.png');
@@ -63,13 +69,14 @@ async function criarBotaoDeepPoop() {
     image.setAttribute('style', 'filter: var(--svg-filter)');
 
     svg.appendChild(image);
-    spanIcon.appendChild(svg);
+    divIconSvg.appendChild(svg);
+    spanIcon.appendChild(divIconSvg);
     divIcon.appendChild(spanIcon);
     novoBotao.appendChild(divIcon);
 
     const spanTexto = document.createElement('span');
     spanTexto.setAttribute('class', 'ad0c98fd');
-    spanTexto.textContent = 'DeepPoop V1.3';
+    spanTexto.textContent = 'DeepPoop';
     novoBotao.appendChild(spanTexto);
 
     novoBotao.addEventListener('click', async () => {
